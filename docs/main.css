@@ -138,10 +138,11 @@ article {
   width: 100%;
   border-collapse: collapse;
   text-align: center;
-  margin: 3px 0;
+  margin: 10px 0;
 }
 
-.ability-table th, .ability-table td {
+.ability-table th, 
+.ability-table td {
   border: 1px solid #999;
   padding: 4px 6px;
   font-weight: bold;
@@ -150,3 +151,4 @@ article {
 .ability-table th {
   background-color: #f0f0f0;
 }
+
