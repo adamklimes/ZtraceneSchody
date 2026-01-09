@@ -78,3 +78,33 @@ article {
     width: 0%;
   }
 }
+/* Elemental Cards */
+.elemental-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.elemental-card {
+  flex: 1 1 45%;
+  background: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.elemental-card h3 {
+  margin-top: 0;
+}
+
+.fire { border-left: 6px solid #e25822; }
+.air { border-left: 6px solid #7ec8e3; }
+.earth { border-left: 6px solid #a17c50; }
+.water { border-left: 6px solid #2a70b8; }
+
+@media screen and (max-width: 900px) {
+  .elemental-card {
+    flex: 1 1 100%;
+  }
+}
