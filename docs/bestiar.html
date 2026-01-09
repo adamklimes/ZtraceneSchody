@@ -25,7 +25,7 @@
 
     <!-- Fire Elemental -->
     <div class="elemental-card fire">
-      <h3>Ohnivý elementál</h3>
+      <h3>Nižší ohnivý elementál</h3>
       <p><em>Malý elementál, neutrální</em></p>
       <table class="stat-table">
         <tr><th>Obranné číslo</th><td>13</td></tr>
@@ -55,9 +55,14 @@
         <tr><th>Imunity</th><td>ohnivá</td></tr>
         <tr><th>Zranitelnosti</th><td>chladná</td></tr>
         <tr><th>Imunity vůči stavům</th><td>ležící, otrávený, paralyzovaný, uchvácený, únava, v bezvědomí, zadržený, zkamenělý</td></tr>
+        <tr><th>Smysly</th><td>vidění ve tmě 12 sáhů, pasivní Vnímání 10</td></tr>
+        <tr><th>Jazyky</th><td>ignanština</td></tr>
+        <tr><th>Nebezpečnost</th><td>2 (450 ZK)</td></tr>
       </table>
       <table class="stat-table">
-        <tr><th>Ohnivá forma</th><td>útočník na blízko utrpí 1k4 ohnivé zranění při zásahu</td></tr> 
+        <tr><th>Ohnivá forma</th><td>Elementál se umí pohnout otvorem širokým aspoň 1 coul, aniž by se protlačoval. Tvor, který se dotkne elementála nebo ho zasáhne útokem na blízko ze vzdálenosti do 1 sáhu, utrpí ohnivé zranění 2 (1k4).</td></tr> 
+        <tr><th>Svícení</th><td>Elementál osvítí slabým světlem okruh o poloměru 2 sáhů.</td></tr> 
+        <tr><th>Náchylnost na vodu</th><td>Za každý sáh, co se elementál pohne ve vodě, nebo za každý na něj vychrstnutý galon vody, utrpí chladné zranění 1.</td></tr>
       </table>
       <p><em>Akce</em></p>
       <table class="stat-table">
@@ -67,124 +72,145 @@
 
     <!-- Air Elemental -->
     <div class="elemental-card air">
-      <h3>Air Elemental</h3>
-      <p><em>Role: Skirmisher | Small elemental, neutral</em></p>
+      <h3>Nižší vzdušný elementál</h3>
+      <p><em>Malý elementál, neutrální</em></p>
       <table class="stat-table">
-        <tr><th>AC / HP</th><td>14 / 33 (6d8+6)</td></tr>
-        <tr><th>Speed</th><td>Fly 50 ft. (hover)</td></tr>
-         <tr>
-  <th>Abilities</th>
-  <td>
-         <table class="ability-table">
-      <tr>
-        <th>STR</th>
-        <th>DEX</th>
-        <th>CON</th>
+        <tr><th>Obranné číslo</th><td>14</td></tr>
+        <tr><th>Životy</th><td>33 (6k8+6)</td></tr>
+        <tr><th>Rychlost</th><td>0 sáhů, létání 10 sáhů (vznášení se)</td></tr>
+      </table>
+      <table class="ability-table">
+       <tr>
+        <th>SIL</th>
+        <th>OBR</th>
+        <th>ODL</th>
         <th>INT</th>
-        <th>WIS</th>
+        <th>MDR</th>
         <th>CHA</th>
-      </tr>
-      <tr>
-        <td>10</td>
-        <td>16</td>
-        <td>12</td>
-        <td>6</td>
-        <td>10</td>
-        <td>7</td>
-      </tr>
-    </table>
-  </td>
-</tr>
-        <tr><th>Resistances</th><td>Bludgeoning, piercing, slashing (nonmagical)</td></tr>
-        <tr><th>Immunities</th><td>Poison</td></tr>
-        <tr><th>Vulnerabilities</th><td>None</td></tr>
-        <tr><th>Condition Immunities</th><td>Grappled, paralyzed, petrified, prone, restrained</td></tr>
+       </tr>
+       <tr>
+        <td>10 (+0)</td>
+        <td>16 (+3)</td>
+        <td>12 (+1)</td>
+        <td>6 (-2)</td>
+        <td>10 (+0)</td>
+        <td>7 (-2)</td>
+       </tr>
       </table>
       <table class="stat-table">
-        <tr><th>Attack</th><td>Gust Strike +5 to hit, 5 ft., 7 (2d4+2) bludgeoning, push 5 ft</td></tr>
-        <tr><th>Abilities</th><td>Slipstream – opportunity attacks against it at disadvantage</td></tr>
+        <tr><th>Odolání</th><td>bodná, drtivá a sečná z nemagických útoků</td></tr>
+        <tr><th>Imunity</th><td>jedová</td></tr>
+        <tr><th>Zranitelnosti</th><td>-</td></tr>
+        <tr><th>Imunity vůči stavům</th><td>ležící, otrávený, paralyzovaný, uchvácený, únava, v bezvědomí, zadržený, zkamenělý</td></tr>
+        <tr><th>Smysly</th><td>vidění ve tmě 12 sáhů, pasivní Vnímání 10</td></tr>
+        <tr><th>Jazyky</th><td>auranština</td></tr>
+        <tr><th>Nebezpečnost</th><td>2 (450 ZK)</td></tr>
+      </table>
+      <table class="stat-table">
+        <tr><th>Vzdušná forma</th><td>Elementál se umí pohnout otvorem širokým aspoň 1 coul, aniž by se protlačoval. Příležitostné útoky na elementála mají nevýhodu.</td></tr> 
+      </table>
+      <p><em>Akce</em></p>
+      <table class="stat-table">
+        <tr><th>Poryv větru</th><td><i>Útok na blízko zbraní:</i> +5 k zásahu, dosah 1 sáh, jeden cíl. Zásah: Drtivé zranění 7 (2k4 + 2) a elementál může odtlačit cíl 1 sáh od sebe.</td></tr>
       </table>
     </div>
 
     <!-- Earth Elemental -->
     <div class="elemental-card earth">
-      <h3>Earth Elemental</h3>
-      <p><em>Role: Anchor | Small elemental, neutral</em></p>
+      <h3>Nižší zemní elementál</h3>
+      <p><em>Malý elementál, neutrální</em></p>
       <table class="stat-table">
-        <tr><th>AC / HP</th><td>16 / 45 (6d8+18)</td></tr>
-        <tr><th>Speed</th><td>20 ft., burrow 20 ft.</td></tr>
-        <tr>
-  <th>Abilities</th>
-  <td>
-    <table class="ability-table">
-      <tr>
-        <th>STR</th>
-        <th>DEX</th>
-        <th>CON</th>
+        <tr><th>Obranné číslo</th><td>16</td></tr>
+        <tr><th>Životy</th><td>45 (6k8+18)</td></tr>
+        <tr><th>Rychlost</th><td>4 sáhy, hrabání 4 sáhy</td></tr>
+      </table>
+      <table class="ability-table">
+       <tr>
+        <th>SIL</th>
+        <th>OBR</th>
+        <th>ODL</th>
         <th>INT</th>
-        <th>WIS</th>
+        <th>MDR</th>
         <th>CHA</th>
-      </tr>
-      <tr>
-        <td>16</td>
-        <td>8</td>
-        <td>16</td>
-        <td>6</td>
-        <td>10</td>
-        <td>7</td>
-      </tr>
-    </table>
-  </td>
-</tr>
-        <tr><th>Resistances</th><td>Bludgeoning, piercing, slashing (nonmagical)</td></tr>
-        <tr><th>Vulnerabilities</th><td>Thunder</td></tr>
-        <tr><th>Condition Immunities</th><td>Paralyzed, petrified, poisoned, prone, restrained</td></tr>
+       </tr>
+       <tr>
+        <td>16 (+3)</td>
+        <td>8 (-1)</td>
+        <td>16 (+3)</td>
+        <td>6 (-2)</td>
+        <td>10 (+0)</td>
+        <td>7 (-2)</td>
+       </tr>
       </table>
       <table class="stat-table">
-        <tr><th>Attack</th><td>Slam +5 to hit, 5 ft., 8 (1d10+3) bludgeoning</td></tr>
-        <tr><th>Abilities</th><td>Earth Glide</td></tr>
-        <tr><th>Reaction</th><td>Brace (R 5–6) – resistance to all damage until start of next turn</td></tr>
+        <tr><th>Odolání</th><td>bodná, drtivá a sečná z nemagických útoků</td></tr>
+        <tr><th>Imunity</th><td>-</td></tr>
+        <tr><th>Zranitelnosti</th><td>hromová</td></tr>
+        <tr><th>Imunity vůči stavům</th><td>ležící, otrávený, paralyzovaný, uchvácený, únava, v bezvědomí, zadržený, zkamenělý</td></tr>
+        <tr><th>Smysly</th><td>vidění ve tmě 12 sáhů, pasivní Vnímání 10</td></tr>
+        <tr><th>Jazyky</th><td>terranština</td></tr>
+        <tr><th>Nebezpečnost</th><td>2 (450 ZK)</td></tr>
+      </table>
+      <table class="stat-table">
+        <tr><th>Proplouvání zemí</th><td>Elementál se umí prohrabat skrz nemagickou, neopracovanou zeminu a kámen. Během prohrabávání nenarušuje materiál, skrz který se pohybuje.</td></tr> 
+      </table>
+      <p><em>Akce</em></p>
+      <table class="stat-table">
+        <tr><th>Bouchnutí</th><td><i>Útok na blízko zbraní:</i> +5 k zásahu, dosah 1 sáh, jeden cíl. Zásah: Drtivé zranění 8 (1k10 + 3).</td></tr>
+      </table>
+      <p><em>Reakce</em></p>
+      <table class="stat-table">
+        <tr><th>Zpevnění (obnovení 5-6)</th><td><i>Když se tvor, kterého elementál vidí, přiblíží na vzdálenost jednoho sáhu, elementál získá odolnost vůči veškerému zranění do začátku svého příštího tahu.</td></tr>
       </table>
     </div>
-
+    
     <!-- Water Elemental -->
     <div class="elemental-card water">
-      <h3>Water Elemental</h3>
-      <p><em>Role: Disruptor | Small elemental, neutral</em></p>
+      <h3>Nižší vodní elementál</h3>
+      <p><em>Malý elementál, neutrální</em></p>
       <table class="stat-table">
-        <tr><th>AC / HP</th><td>13 / 36 (8d6+8)</td></tr>
-        <tr><th>Speed</th><td>30 ft., swim 40 ft.</td></tr>
-         <tr>
-  <th>Abilities</th>
-  <td>
-         <table class="ability-table">
-      <tr>
-        <th>STR</th>
-        <th>DEX</th>
-        <th>CON</th>
+        <tr><th>Obranné číslo</th><td>13</td></tr>
+        <tr><th>Životy</th><td>36 (6k8+8)</td></tr>
+        <tr><th>Rychlost</th><td>4 sáhy, plavání 8 sáhů</td></tr>
+      </table>
+      <table class="ability-table">
+       <tr>
+        <th>SIL</th>
+        <th>OBR</th>
+        <th>ODL</th>
         <th>INT</th>
-        <th>WIS</th>
+        <th>MDR</th>
         <th>CHA</th>
-      </tr>
-      <tr>
-        <td>12</td>
-        <td>12</td>
-        <td>14</td>
-        <td>6</td>
-        <td>10</td>
-        <td>7</td>
-      </tr>
-    </table>
-  </td>
-</tr>
-        <tr><th>Resistances</th><td>Acid; bludgeoning, piercing, slashing (nonmagical)</td></tr>
-        <tr><th>Vulnerabilities</th><td>Lightning</td></tr>
-        <tr><th>Condition Immunities</th><td>Grappled, paralyzed, petrified, prone, restrained</td></tr>
+       </tr>
+       <tr>
+        <td>12 (+1)</td>
+        <td>12 (+1)</td>
+        <td>14 (+2)</td>
+        <td>6 (-2)</td>
+        <td>10 (+0)</td>
+        <td>7 (-2)</td>
+       </tr>
       </table>
       <table class="stat-table">
-        <tr><th>Attack</th><td>Whelm Strike +3 to hit, 5 ft., 7 (2d4+1) bludgeoning</td></tr>
-        <tr><th>Abilities</th><td>Clinging Current – creatures starting in its space have speed −10 ft.</td></tr>
-        <tr><th>Reaction</th><td>Ebb & Pull (R 5–6) – speed −10 ft. when leaving reach</td></tr>
+        <tr><th>Odolání</th><td>kyselinová; bodná, drtivá a sečná z nemagických útoků</td></tr>
+        <tr><th>Imunity</th><td>-</td></tr>
+        <tr><th>Zranitelnosti</th><td>blesková</td></tr>
+        <tr><th>Imunity vůči stavům</th><td>ležící, otrávený, paralyzovaný, uchvácený, únava, v bezvědomí, zadržený, zkamenělý</td></tr>
+        <tr><th>Smysly</th><td>vidění ve tmě 12 sáhů, pasivní Vnímání 10</td></tr>
+        <tr><th>Jazyky</th><td>akvanština</td></tr>
+        <tr><th>Nebezpečnost</th><td>2 (450 ZK)</td></tr>
+      </table>
+      <table class="stat-table">
+        <tr><th>Vodní forma</th><td>Elementál může vstoupit na místo nepřátelského tvora a zastavit se tam. Umí se pohnout otvorem širokým aspoň 1 coul, aniž by se protlačoval.</td></tr>
+        <tr><th>Proud</th><td>Tvor začínající svůj tah na místě elementála má sníženou rychlost o 2 sáhy do konce svého tahu.</td></tr>
+      </table>
+      <p><em>Akce</em></p>
+      <table class="stat-table">
+        <tr><th>Cáknutí</th><td><i>Útok na blízko zbraní:</i> +3 k zásahu, dosah 1 sáh, jeden cíl. Zásah: Drtivé zranění 6 (2k4 + 1).</td></tr>
+      </table>
+      <p><em>Reakce</em></p>
+      <table class="stat-table">
+        <tr><th>Odliv (obnovení 5-6)</th><td><i>Když se tvor, do jednoho sáhu od elementála vzdálí z jeho dosahu, elementál může snížit rychlost tohoto tvora do konce kola o 2 sáhy.</td></tr>
       </table>
     </div>
 
