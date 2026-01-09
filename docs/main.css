@@ -89,13 +89,39 @@ article {
 .elemental-card {
   flex: 1 1 45%;
   background: #fff;
-  padding: 10px;
+  padding: 15px;
   border-radius: 10px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  margin-bottom: 20px;
 }
 
 .elemental-card h3 {
   margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.elemental-card em {
+  display: block;
+  margin-bottom: 10px;
+  font-style: italic;
+  color: #555;
+}
+
+.stat-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 10px;
+}
+
+.stat-table th {
+  text-align: left;
+  background-color: #f0f0f0;
+  padding: 3px 6px;
+  width: 25%;
+}
+
+.stat-table td {
+  padding: 3px 6px;
 }
 
 .fire { border-left: 6px solid #e25822; }
